@@ -1,0 +1,12 @@
+[
+  {
+    "package": "esqlabsR",
+    "url": "https://github.com/esqLABS/esqlabsR",
+    "branch": "*release"
+  },
+  {
+    "package": "osp.snapshots",
+    "url": "https://github.com/esqLABS/osp.snapshots",
+    "branch": "*release"
+  }
+]
