@@ -1,20 +1,10 @@
 # esqLABS R-universe
 
-This repository is the **R-universe registry** for the esqLABS R packages. It is not an R package itself; its only job is to hold `packages.json`, the list of package repositories that [R-universe](https://r-universe.dev) builds and publishes.
-
-Once this repository lives in the `esqLABS` GitHub organization and the R-universe GitHub App is enabled, R-universe builds every listed package from source on Windows, macOS, and Linux and serves the resulting binaries from:
-
-```
-https://esqlabs.r-universe.dev
-```
-
-## Repository naming
-
-R-universe discovers a registry only when the repository is named `universe` in the organization. **This repository must be pushed to `https://github.com/esqLABS/universe`**, even though the local working directory is named `ESQuniverse`. The local name is a convenience only (the OSP registry already occupies the `universe` directory name locally); the GitHub remote name is what R-universe reads.
+This repository is the **R-universe registry** for the esqLABS R packages. It is not an R package itself; its only job is to hold `packages.json`, the list of package repositories that [R-universe](https://r-universe.dev) builds and publishes to https://esqlabs.r-universe.dev.
 
 ## Installing from this universe
 
-Once the universe is live, users install with plain `install.packages()`:
+Users can install ESQlabs packages with plain `install.packages()`:
 
 ```r
 install.packages(
@@ -26,9 +16,6 @@ install.packages(
   )
 )
 ```
-
-`esqlabsR` depends on the Open Systems Pharmacology packages (`ospsuite` and friends), so listing the OSP universe alongside this one lets R resolve that dependency chain from the OSP universe and everything else from CRAN.
-
 ## What gets built
 
 `packages.json` lists the public esqLABS R packages that publish GitHub releases. Each entry tracks the package's latest release (`"branch": "*release"`).
