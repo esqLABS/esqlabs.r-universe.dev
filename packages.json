@@ -8,5 +8,10 @@
     "package": "osp.snapshots",
     "url": "https://github.com/esqLABS/osp.snapshots",
     "branch": "*release"
+  },
+  {
+    "package": "ESQivive",
+    "url": "https://github.com/esqLABS/ESQivive",
+    "branch": "*release"
   }
 ]
